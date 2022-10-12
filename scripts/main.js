@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
     AOS.init({
-        // uncomment below for on-scroll animations to played only once
+        // uncomment below for on-scroll animations to be played only once
         // once: true  
     }); // initialize animate on scroll library
 });
@@ -21,7 +21,7 @@ $('a.smooth-scroll')
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             // Does a scroll target exist?
             if (target.length) {
-                // Only prevent default if animation is actually gonna happen
+                // Only prevent default if animation is actually going to happen
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: target.offset().top
